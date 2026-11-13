@@ -3,8 +3,7 @@ kind: Service
 metadata:
   name: mysvc
   labels:
-    app: myapp
-    version: 2.6.2
+    app: myapp  
 spec:
   type: NodePort
   ports:
@@ -13,4 +12,3 @@ spec:
       nodePort: 30001
   selector:
     app: myapp
-    version: 2.6.2
